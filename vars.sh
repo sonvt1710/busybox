@@ -18,7 +18,7 @@
 IMAGE_NAME="$1"; shift;
 INPUT_ARCH="$1"; shift;
 SUFFIX="$1"; shift;
-TAG="bookworm-slim"
+TAG="trixie-slim"
 PLATFORM="linux/amd64"
 
 case "${INPUT_ARCH}" in
@@ -30,7 +30,6 @@ case "${INPUT_ARCH}" in
         ;;
     riscv64)
         PLATFORM="linux/riscv64"
-        TAG="sid-slim"
         ;;
     ppc64le)
         PLATFORM="linux/ppc64le"
